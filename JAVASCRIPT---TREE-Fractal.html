@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fractal Tree Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="controls">
+    <label for="depth">Depth:</label>
+    <input type="range" id="depth" min="1" max="10" value="5">
+    
+    <label for="angle">Angle:</label>
+    <input type="range" id="angle" min="0" max="360" value="20">
+    
+    <label for="length">Length:</label>
+    <input type="range" id="length" min="10" max="200" value="100">
+    
+    <button onclick="generateTree()">Generate Tree</button>
+  </div>
+  
+  <canvas id="treeCanvas" width="800" height="600"></canvas>
+  
+  <script src="script.js"></script>
+</body>
+</html>
